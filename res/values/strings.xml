@@ -3,7 +3,6 @@
 
     <string name="app_name">Boomerang</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="add_picture">New Picture</string>
     <string name="client">Client Name</string>
     <string name="height">Height (inches)</string>

@@ -23,11 +23,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.boomerang.AddItems"
+            android:name="com.example.boomerang.ItemActivity"
             android:label="@string/title_activity_add_items" >
         </activity>
         <activity
-            android:name="com.example.boomerang.ChooseClient"
+            android:name="com.example.boomerang.ClientActivity"
             android:label="@string/title_activity_choose_client" >
         </activity>
         <activity

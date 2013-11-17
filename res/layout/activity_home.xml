@@ -8,17 +8,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Home" >
 
-    <Button
-        android:id="@+id/scan_items"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/add_items"
-        android:layout_below="@+id/add_items"
-        android:layout_marginTop="86dp"
-        android:text="@string/scan_items" />
-
-    <Button
-        android:id="@+id/add_items"
+     <Button
+        android:id="@+id/pick_client"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -26,5 +17,16 @@
         android:layout_marginTop="72dp"
         android:onClick="goToClient"
         android:text="@string/pick_client" />
+    
+    <Button
+        android:id="@+id/scan_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pick_client"
+        android:layout_below="@+id/pick_client"
+        android:layout_marginTop="86dp"
+        android:text="@string/scan_items" />
+
+   
 
 </RelativeLayout>

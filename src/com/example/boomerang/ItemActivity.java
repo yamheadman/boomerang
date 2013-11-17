@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class AddItems extends Activity {
+public class ItemActivity extends Activity {
 	
 	  private Spinner conditionSpinner;
 	  private Spinner itemTypeSpinner;
@@ -32,7 +32,7 @@ public class AddItems extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_add_items);
+		setContentView(R.layout.item_activity);
 		
 		createConditionSpinner();
 		createItemTypeSpinner();
@@ -40,7 +40,7 @@ public class AddItems extends Activity {
 		createMaterialSpinner();
 		
 		
-		Button btn = (Button) findViewById(R.id.add_items);
+		/*Button btn = (Button) findViewById(R.id.add_items);
 		  
 		btn.setOnClickListener(new View.OnClickListener() {
 	          public void onClick(View v) {
@@ -68,7 +68,7 @@ public class AddItems extends Activity {
 				goGallery();
 			}
 
-		});		
+		});		*/
 	}
 
 		
