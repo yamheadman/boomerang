@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Client {
 	private String id; 
+	private String name;
 	private String phoneNumber;
 	private ArrayList <Item> itemList= new ArrayList<Item>();
 	
@@ -30,6 +31,14 @@ public class Client {
 	
 	public String getPN(){
 		return this.phoneNumber;
+	}
+	
+	public void setItems(ArrayList <Item> items){
+		this.itemList = items;
+	}
+	
+	public ArrayList <Item> getItems(){
+		return this.itemList;
 	}
 	
     public int describeContents(){

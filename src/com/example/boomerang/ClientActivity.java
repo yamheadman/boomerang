@@ -13,6 +13,9 @@ public class ClientActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.client_activity);
+		
+		SingleClient client = SingleClient.getInstance();
+		
 	}
 
     public void addItems(View view) {

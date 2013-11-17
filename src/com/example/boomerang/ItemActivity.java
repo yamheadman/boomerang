@@ -1,6 +1,7 @@
 package com.example.boomerang;
 
 import java.io.File;
+import java.util.ArrayList;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -44,6 +45,10 @@ public class ItemActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.item_activity);
 		
+
+		
+		
+		//Initialize inputs
 		createConditionSpinner();
 		createItemTypeSpinner();
 		createColorSpinner();
@@ -189,9 +194,33 @@ public class ItemActivity extends Activity {
 		  
 		  item.setComments(comments.getText().toString());
 		  
+			//Initialize Singleton Client
+			SingleClient sClient = SingleClient.getInstance();
+			Client client = sClient.getClient();
+		  
+			
+		//Add item to client array of items
+			
+			ArrayList <Item> items = new ArrayList <Item>();
+			
+			
+			//items = sClient.getClient().getItems();
+		  
+		
+		  items.add(item);
 		  
 		  
-		//  Toast.makeText(getApplicationContext(), ""+item.getHeight(), Toast.LENGTH_LONG).show();
+		  //Update Singleton Client with updated client
+		  
+		  client.setItems(items);
+		  
+		  sClient.setClient(client);
+		  
+		  
+		 
+		  
+		  
+		 // Toast.makeText(getApplicationContext(), client.getId(), Toast.LENGTH_LONG).show();
 
 	  }
 	  

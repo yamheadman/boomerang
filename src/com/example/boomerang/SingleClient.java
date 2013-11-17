@@ -12,7 +12,7 @@ public class SingleClient{
 	    private synchronized static void createInstance() {
 	        if (THECLIENT == null) { 
 	            THECLIENT = new SingleClient();
-	            THECLIENT.client = null;
+	            THECLIENT.client = new Client();
 	        }
 	    }
 	 
