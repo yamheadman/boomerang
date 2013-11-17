@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ItemSummary extends Activity {
 
@@ -17,9 +18,16 @@ public class ItemSummary extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		//Initialize Singleton Client
+		SingleClient sClient = SingleClient.getInstance();
+		Client client = sClient.getClient();
+	  
 		
-		ArrayList <Item> itemList= new ArrayList<Item>();
-        Item item = new Item();
+	//Add item to client array of items
+		
+		
+		ArrayList <Item> itemList= client.getItems();
+        Item item;
         
         //Define layouts objects to add
         TextView type;
@@ -32,20 +40,22 @@ public class ItemSummary extends Activity {
 
         
         //Populate the list view with the items
-        for(int i = 0; i<20; i++){
+        for(int i = 0; i<itemList.size(); i++){
         	hl = new LinearLayout(this);
         	hl.setPadding(50, 20, 50, 0);
         	
-        	item.setType("Test");
+        	item = itemList.get(i);
         	
-        	itemList.add(item);
+        //	item.setType("Test");
+        	
             type = new TextView(this);
-            type.setText("test");
+            type.setText(item.getType());
             hl.addView(type);
             
             ll.addView(hl);
 
         }
+        Toast.makeText(getApplicationContext(), ""+itemList.size(), Toast.LENGTH_LONG).show();
         
         Button submitButton = new Button(this);
         submitButton.setText(R.string.submit);

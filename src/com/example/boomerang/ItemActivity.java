@@ -220,7 +220,7 @@ public class ItemActivity extends Activity {
 		 
 		  
 		  
-		 // Toast.makeText(getApplicationContext(), client.getId(), Toast.LENGTH_LONG).show();
+		 
 
 	  }
 	  
@@ -228,8 +228,8 @@ public class ItemActivity extends Activity {
 	  public void goToSummary(View view){
 		  createItem();
 		  
-		 // Intent intent = new Intent(this, ItemSummary.class);	    	
-	    	//startActivity(intent);
+		  Intent intent = new Intent(this, ItemSummary.class);	    	
+	    	startActivity(intent);
 	  }
 	  
 	 
