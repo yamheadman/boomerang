@@ -201,14 +201,14 @@ public class ItemActivity extends Activity {
 			
 		//Add item to client array of items
 			
-			ArrayList <Item> items = new ArrayList <Item>();
+			ArrayList <Item> items = client.getItems();
 			
 			
 			//items = sClient.getClient().getItems();
 		  
-		
+	        Toast.makeText(getApplicationContext(), ""+items.size(), Toast.LENGTH_LONG).show();
+
 		  items.add(item);
-		  
 		  
 		  //Update Singleton Client with updated client
 		  
@@ -230,6 +230,13 @@ public class ItemActivity extends Activity {
 		  
 		  Intent intent = new Intent(this, ItemSummary.class);	    	
 	    	startActivity(intent);
+	  }
+	  
+	  public void addAnotherItem(View view){
+		  createItem();
+		  
+		  Intent intent = new Intent (this, ItemActivity.class);
+		  startActivity(intent);
 	  }
 	  
 	 

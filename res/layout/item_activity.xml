@@ -149,6 +149,12 @@
             android:ems="10"
             android:inputType="textMultiLine" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal" >
+
+
         <Button
             android:id="@+id/submit"
             android:layout_width="wrap_content"
@@ -156,6 +162,13 @@
             android:text="@string/submit" 
             android:onClick="goToSummary"
              />
+
+        <Button
+            android:id="@+id/anotherItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anotherItem"
+            android:onClick="addAnotherItem" />
         
         <Button
             android:id="@+id/gallery"
@@ -163,6 +176,7 @@
             android:layout_height="wrap_content"
             android:text="@string/gallery"
         	android:onClick="goGallery" />
+                </LinearLayout>
 
     </LinearLayout>
 
