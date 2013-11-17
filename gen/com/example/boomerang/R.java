@@ -65,17 +65,19 @@ public final class R {
     public static final class layout {
         public static final int activity_home=0x7f030000;
         public static final int activity_item_list=0x7f030001;
-        public static final int barcode_scanner=0x7f030002;
-        public static final int camtest=0x7f030003;
-        public static final int client_activity=0x7f030004;
-        public static final int item_activity=0x7f030005;
+        public static final int activity_item_summary=0x7f030002;
+        public static final int barcode_scanner=0x7f030003;
+        public static final int camtest=0x7f030004;
+        public static final int client_activity=0x7f030005;
+        public static final int item_activity=0x7f030006;
     }
     public static final class menu {
         public static final int add_items=0x7f080000;
         public static final int choose_client=0x7f080001;
         public static final int home=0x7f080002;
         public static final int item_list=0x7f080003;
-        public static final int main=0x7f080004;
+        public static final int item_summary=0x7f080004;
+        public static final int main=0x7f080005;
     }
     public static final class string {
         public static final int Material=0x7f050013;
@@ -93,6 +95,7 @@ public final class R {
         public static final int donate_label=0x7f050016;
         public static final int gallery=0x7f050011;
         public static final int height=0x7f050004;
+        public static final int hello_world=0x7f05001d;
         public static final int itemList=0x7f05001b;
         public static final int item_type=0x7f050007;
         public static final int length=0x7f050005;
@@ -104,6 +107,7 @@ public final class R {
         public static final int title_activity_add_items=0x7f05000a;
         public static final int title_activity_choose_client=0x7f05000b;
         public static final int title_activity_item_list=0x7f05001a;
+        public static final int title_activity_item_summary=0x7f05001c;
         public static final int title_activity_main=0x7f050019;
         public static final int yes=0x7f050017;
     }

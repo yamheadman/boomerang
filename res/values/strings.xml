@@ -26,7 +26,7 @@
     </string-array>
 
     <string name="add_item">Add Item</string>
-     <string name="album_name">CameraSample</string>
+    <string name="album_name">CameraSample</string>
     <string name="submit">Submit</string>
     <string name="gallery">Gallery</string>
     <string name="color">Color</string>
@@ -78,5 +78,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_item_list">ItemList</string>
     <string name="itemList">Item List</string>
+    <string name="title_activity_item_summary">ItemSummary</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
