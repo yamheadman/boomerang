@@ -12,7 +12,9 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ItemActivity extends Activity {
@@ -21,6 +23,14 @@ public class ItemActivity extends Activity {
 	  private Spinner itemTypeSpinner;
 	  private Spinner colorSpinner;
 	  private Spinner materialSpinner;
+	  private TextView comments;
+
+		private boolean donate;
+		
+		private double length;
+		private double width;
+		private TextView height;
+		private double minPrice;
 	  
 	  private File output=null;
 	  
@@ -38,6 +48,8 @@ public class ItemActivity extends Activity {
 		createItemTypeSpinner();
 		createColorSpinner();
 		createMaterialSpinner();
+		createComments();
+		createHeight();
 		
 		
 		/*Button btn = (Button) findViewById(R.id.add_items);
@@ -128,6 +140,16 @@ public class ItemActivity extends Activity {
 
 		  }
 	  
+	  public void createComments() {
+		  
+			comments = (TextView) findViewById(R.id.comments_input);
+		  }
+	  
+	  public void createHeight() {
+		  
+			height = (EditText) findViewById(R.id.comments_input);
+		  }
+	  
 	  public void takePicture() {
 		  //Toast.makeText(getApplicationContext(), "Test", Toast.LENGTH_LONG).show();
 		  Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -154,24 +176,32 @@ public class ItemActivity extends Activity {
 		  //Set properties
 		  String condition = conditionSpinner.getSelectedItem().toString();
 		  String type = itemTypeSpinner.getSelectedItem().toString();
-		  //String color = color
-		 // String material
+		  String color = colorSpinner.getSelectedItem().toString();
+		  String material = materialSpinner.getSelectedItem().toString();
+		 // double heightInput =  Double.parseDouble(height.getText().toString());
 		  
 		  //Set properties on the item
 		  item.setCondition(condition);
 		  item.setType(type);
+		  item.setColor(color);
+		  item.setMaterial(material);
+		 // item.setHeight(heightInput);
 		  
-		  Toast.makeText(getApplicationContext(), item.getCondition(), Toast.LENGTH_LONG).show();
+		  item.setComments(comments.getText().toString());
+		  
+		  
+		  
+		//  Toast.makeText(getApplicationContext(), ""+item.getHeight(), Toast.LENGTH_LONG).show();
 
 	  }
 	  
-	  /*
-	  public void goToItemList(View view){
-		  //createItem();
+	  
+	  public void goToSummary(View view){
+		  createItem();
 		  
-		  Intent intent = new Intent(this, ItemList.class);	    	
-	    	startActivity(intent);
-	  }*/
+		 // Intent intent = new Intent(this, ItemSummary.class);	    	
+	    	//startActivity(intent);
+	  }
 	  
 	 
 	/*  public void addListenerOnButton() {

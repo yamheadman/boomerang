@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
@@ -31,17 +32,29 @@ public class ItemSummary extends Activity {
 
         
         //Populate the list view with the items
-        for(int i = 0; i<10; i++){
+        for(int i = 0; i<20; i++){
         	hl = new LinearLayout(this);
+        	hl.setPadding(50, 20, 50, 0);
+        	
         	item.setType("Test");
         	
         	itemList.add(item);
             type = new TextView(this);
             type.setText("test");
-
-            ll.addView(type);
+            hl.addView(type);
+            
+            ll.addView(hl);
 
         }
+        
+        Button submitButton = new Button(this);
+        submitButton.setText(R.string.submit);
+    	hl = new LinearLayout(this);
+    	hl.setPadding(50, 20, 50, 0);
+    	hl.addView(submitButton);
+        
+        ll.addView(hl);
+        
         
         sv.addView(ll);
         

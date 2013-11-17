@@ -29,7 +29,7 @@ public class Item {
 		return this.length;
 	}
 	
-	public void setLength(int l) {
+	public void setLength(double l) {
 		this.length = l;
 	}
 	
@@ -37,7 +37,7 @@ public class Item {
 		return this.width;
 	}
 	
-	public void setWidtch(int w) {
+	public void setWidth(double w) {
 		this.width = w;
 	}
 	
@@ -45,7 +45,7 @@ public class Item {
 		return this.height;
 	}
 	
-	public void setHeight(int h) {
+	public void setHeight(double h) {
 		this.height = h;
 	}
 	

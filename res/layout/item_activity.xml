@@ -84,7 +84,7 @@
             android:inputType="numberDecimal" />
 
         <TextView
-            android:id="@+id/depth_input"
+            android:id="@+id/depth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/depth" />
@@ -154,6 +154,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/submit" 
+            android:onClick="goToSummary"
              />
         
         <Button

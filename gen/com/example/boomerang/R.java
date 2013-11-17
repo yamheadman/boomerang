@@ -30,20 +30,21 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001e;
+        public static final int action_settings=0x7f09001f;
         public static final int add_picture=0x7f090008;
         public static final int button1=0x7f090002;
         public static final int client_name_labe=0x7f090004;
         public static final int client_spinner=0x7f090005;
-        public static final int color_label=0x7f090013;
-        public static final int color_spinner=0x7f090014;
-        public static final int comments_input=0x7f09001b;
-        public static final int comments_label=0x7f09001a;
+        public static final int color_label=0x7f090014;
+        public static final int color_spinner=0x7f090015;
+        public static final int comments_input=0x7f09001c;
+        public static final int comments_label=0x7f09001b;
         public static final int condition_label=0x7f09000c;
         public static final int condition_spinner=0x7f09000d;
-        public static final int depth_input=0x7f090012;
-        public static final int donate_checkbox=0x7f090019;
-        public static final int gallery=0x7f09001d;
+        public static final int depth=0x7f090012;
+        public static final int depth_input=0x7f090013;
+        public static final int donate_checkbox=0x7f09001a;
+        public static final int gallery=0x7f09001e;
         public static final int go_to_add_items=0x7f090006;
         public static final int height=0x7f09000e;
         public static final int height_input=0x7f09000f;
@@ -54,13 +55,13 @@ public final class R {
         public static final int length=0x7f090010;
         public static final int lenth_input=0x7f090011;
         public static final int linearLayout1=0x7f090007;
-        public static final int material_label=0x7f090015;
-        public static final int material_spinner=0x7f090016;
-        public static final int minprice=0x7f090017;
-        public static final int minprice_input=0x7f090018;
+        public static final int material_label=0x7f090016;
+        public static final int material_spinner=0x7f090017;
+        public static final int minprice=0x7f090018;
+        public static final int minprice_input=0x7f090019;
         public static final int pick_client=0x7f090000;
         public static final int scan_items=0x7f090001;
-        public static final int submit=0x7f09001c;
+        public static final int submit=0x7f09001d;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
